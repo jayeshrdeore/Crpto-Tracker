@@ -1,0 +1,341 @@
+.grid-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 1rem 2rem;
+}
+.grid-inner{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.grid-box {
+  /* width: 250px; */
+  width: 200px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    background-color: var(--darkgrey);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    border: 2px solid #beb8b8;
+}
+.grid-a{
+  padding: 0px;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.coin-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.name-flex p {
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.coin-name {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+
+.coin-chip {
+  border: 2px solid var(--green);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.coin-chip:hover {
+  background-color: var(--green) !important;
+  border-color: var(--green) !important;
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+
+.chip-flex {
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.icon {
+  border: 2px solid var(--green);
+  padding: 0.35rem;
+  border-radius: 50%;
+  color: var(--green);
+}
+
+.icon:hover {
+  background-color: var(--green) !important;
+  border-color: var(--green) !important;
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+
+.coin-price {
+  margin: 0;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.chip-red {
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+
+.chip-red:hover {
+  background-color: var(--red) !important;
+  border-color: var(--red) !important;
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+
+.volume-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  opacity: 0.8;
+  font-family: system-ui;
+}
+
+.grid-box:hover {
+  border: 2px solid var(--green);
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.grid-box-red:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--red);
+  transition: all 0.3s;
+}
+
+/*    >>>>>>>>> List Style <<<<<<<< */
+
+
+.list-row {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    /* margin: 1rem 0rem; */
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+}
+
+.list-row:hover {
+  background-color: var(--darkgrey);
+}
+
+.list-row td {
+  text-align: left !important;
+  /* width: 18%; */
+}
+
+.td-chip-flex {
+  min-width: 10rem;
+}
+
+.td-img {
+  width: 5rem !important;
+}
+
+.td-name-flex {
+  min-width: 100px;
+}
+
+.td-vol-cap {
+  display: none;
+}
+
+
+/* >>>>>>>>>  Search Styling   <<<<<<<<<<< */
+
+.search-box {
+  display: flex;
+  margin-top: 8rem ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: var(--darkgrey);
+  padding: 0.5rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--lightgrey);
+  gap: 0.5rem;
+  border-radius: 3rem;
+}
+
+.search-box input {
+  width: 100%;
+  background-color: var(--darkgrey);
+  color: var(--lightgrey);
+  font-family: "Inter", sans-serif;
+  border: none;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+/* >>>>>>>>>>Top button <<<<<<<<<<< */
+
+.top-btn {
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--darkgrey);
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* >>>>LOading   <<<<<<<< */
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--blue);
+  width: 100%;
+  height: 100%;
+}
+
+/* >>>>>>>>>>>Pagination   <<<<<<<<< */
+
+.pagination-div {
+  display: flex;
+  margin: 0rem 0rem 4rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .search-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .td-mkt-cap {
+    display: none;
+  }
+  .td-vol-cap {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .coin-chip{
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    color: var(--green);
+    border-width: 1px;
+        /* font-size: 52%; */
+        font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0.25rem 0.35rem;
+  }
+  .list-row {
+    padding: 0rem;
+    gap: 0.5rem;
+  }
+  .td-name-flex {
+    min-width: 0px;
+  }
+
+  .td-chip-flex {
+    min-width: 0rem;
+  }
+
+  .chip-icon {
+    display: none !important;
+  }
+
+  .td-img {
+    width: min-content !important;
+  }
+  .percentage-text {
+    font-size: 50%;
+  }
+  .name-text,
+  .td-vol-cap {
+    font-size: 70%;
+  }
+
+  .td-img img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .list-row {
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+    justify-content: space-between;
+    /* padding: 0 1rem; */
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-box {
+    width: 100% !important;
+  }
+  .list-chip-flex{
+    display: inline;
+  }
+  .percentage-text {
+    width: 46px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-flex {
+    width: 85%;
+    margin: 0px 25px ;
+  }
+}

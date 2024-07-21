@@ -1,0 +1,48 @@
+.desc-links {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.desc-links a {
+  /* text-decoration: underline; */
+  font-style: italic;
+  color: var(--white);
+  font-size: 1.2rem;
+  color: var(--blue) !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.select-div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.toggle-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.line-chart{
+  width: 350px;
+}
+
+@media only screen and (max-width: 800px) {
+  .toggle-div {
+    text-align: center;
+    display: block;
+  }
+  .toggle {
+    font-size: 0.6rem !important;
+    padding: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .desc-links {
+    font-size: 0.8rem;
+  }
+  .desc-links a {
+    font-size: 0.8rem;
+  }
+}
